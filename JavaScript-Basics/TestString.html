@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let s1 = 'Rays Technology ';
+        let s2 = "Vijay DInanath Chouhan";
+        document.write("<h1>S1:" + typeof (s1) + "<hr>" + s1 + "</h1>");
+        document.write("<h1>S2:" + typeof (s2) + "<hr>" + s2 + "</h1>");
+        document.write("<h1>S2.length:" + s2.length + "</h1>");
+        document.write("<h1>S2.length:" + s2.length + "</h1>");
+        document.write("<h1>index of a  :" + s2.indexOf('z') + "</h1>");
+        document.write("<h1>last index of:" + s2.lastIndexOf('a') + "</h1>");
+        //last_index=length-1
+        document.write("<h1>LowerCase:" + s2.toLocaleLowerCase() + "</h1>");
+        document.write("<h1>UpperCase:" + s2.toUpperCase() + "</h1>");
+        document.write("<h1>StartWith:" + s2.startsWith("V") + "</h1>");
+        document.write("<h1>ENd WIth:" + s2.endsWith("han") + "</h1>");
+        document.write("<h1>Trim:" + s1.trim() + "</h1>");
+        document.write("<h1>replace:" + s2.replace('a', '@') + "</h1>");
+        document.write("<h1>replaceAll:" + s2.replaceAll('a', '@') + "</h1>");
+        document.write("<h1>SubString:" + s2.substring(2) + "</h1>");
+        document.write("<h1>SubString:" + s2.substring(2, 10) + "</h1>");//10-2=8(start_index,last_index)
+        document.write("<h1>SubString:" + s2.substr(2, 3) + "</h1>");//(start_index, length)
+        let names = s2.split("a")
+        for (v of names) {
+            document.write("<h1>" + v + "</h1>");
+        }
+
+        // s2[0] = "r";
+        document.write("<h1>slice:" + s2.slice(-22,-10))
+        document.write("<h1>CharAt:"+s2.charAt(0));
+            document.write("Reapeat:"+s2.repeat(2))
+
+
+
+    </script>
+</body>
+</html>

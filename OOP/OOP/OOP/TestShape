@@ -1,0 +1,28 @@
+const Circle = require('./Circle.js')
+const Rectangle = require('./Rectangle.js')
+const Triangle = require('./Triangle.js')
+
+
+let c = new Circle()
+
+c.setColor('blue');
+c.setBorderWidth(2);
+c.setRadius(2);
+
+console.log(c.getColor())
+console.log(c.getBorderWidth())
+console.log(c.area())
+
+let r = new Rectangle()
+r.setColor('red');
+r.setBorderWidth(2);
+r.setLenght(2)
+r.setWidth(4)
+
+console.log('----------------')
+
+console.log(r.getColor())
+console.log(r.getBorderWidth())
+console.log(r.getLenght())
+console.log(r.getWidth())
+console.log(r.area())

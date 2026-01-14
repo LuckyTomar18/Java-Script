@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="Account.js"></script>
+
+    <script>
+        let account = new Account(1232522, 'saving', 10000);
+
+        // account.setAccountNumber(123456);
+        // account.setAccountType("saving");
+        // account.setBalance(5000);
+
+        document.write("<h1>Account Number: " + account.getAccountNumber() + "</h1>");
+        document.write("<h1>Account Holder: " + account.getAccountType() + "</h1>");
+        document.write("<h1>Balance: " + account.getBalance() + "</h1>");
+         document.write("<h1>Balance: " + account.deposit(500) + "</h1>");
+          document.write("<h1>Balance: " + account.withdraw(1000) + "</h1>");
+
+
+
+    </script>
+
+</body>
+
+</html>
